@@ -1,9 +1,11 @@
-// program to display 
-#include <stdio.h>
-
-int main(void) {
-
-    puts("\"Programming is like building a multilingual puzzle");
-
-    return 0;
+#include&lt;stdio.h&gt;
+/**
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+puts("\"Programming is like building a multilingual puzzle&quot");
+return (0);
 }
