@@ -1,31 +1,25 @@
-#include "main.h"
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
+ * _memcpy - copy n bytes of memory from source to destination
+ * @dest: destination
+ * @src: source
+ * @n: number of bytes
+ * Return: pointer to dest
  */
-void simple_print_buffer(char *buffer, unsigned int size)
+
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
 
-	i = 0;
-	while (i < size)
+	int size = n; /* only accept positive sizes */
+
+	if (size > 0)
 	{
-		if (i % 10)
-		{
-			printf(" ");
-		}
-		if (!(i % 10) && i)
-		{
-			printf("\n");
-		}
-		printf("0x%02x", buffer[i]);
-		i++;
-	}
-	printf("\n");
-}
+		int i;
 
+		for (i = 0; i < size; i++)
+			dest[i] = src[i];
+	}
+
+	return (dest);
+}
