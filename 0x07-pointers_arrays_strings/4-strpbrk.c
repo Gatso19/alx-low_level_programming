@@ -12,19 +12,19 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i = 0, j;
 
-	while (s[i] != '\0') /*iterate through string*/
+	while (s[i] != '\0')
 	{
 
-		for (j = 0; accept[j] != '\0'; j++) /* iterate through target */
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] == accept[j]) /* stop at first match */
+			if (s[i] == accept[j])
 			{
-				s = &s[i]; /* set pointer to first occurence */
+				s = &s[i];
 				return (s);
 			}
 		}
 		i++;
 	}
-	return (NULL); /* return NULL if no matches */
+	return (NULL);
 
 }
