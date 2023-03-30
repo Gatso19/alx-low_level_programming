@@ -16,8 +16,8 @@ void free_list(list_t *head)
 }
 
 /**
- * another way using temp pointer
- *
+ * free_list - Frees a linked list and sets the head to NULL
+ *      another way using temp pointer
  *      list_t *ptr;
  *
  *	if (head == NULL) // account for no linked list
