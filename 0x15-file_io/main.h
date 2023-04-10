@@ -23,3 +23,4 @@ void print_dta(Elf32_Ehdr eh);
 void print_vrsn(Elf32_Ehdr eh);
 void print_elf_header(Elf32_Ehdr elf_header);
 #endif
+
